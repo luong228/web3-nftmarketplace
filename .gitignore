@@ -29,3 +29,6 @@ cache
 artifacts
 
 typechain/
+
+# dotenv environment variables file
+.env

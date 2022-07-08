@@ -44,7 +44,7 @@ const Seller = ({
                 justifyContent: "center",
                 flexFlow: "column",
             }}>
-                {escrowState === "Sale" && <Button style={fullWidth} onClick={close} color="secondary" variant="contained">I want to close this ad</Button>}
+                {/* {escrowState === "Sale" && <Button style={fullWidth} onClick={close} color="secondary" variant="contained">I want to close this ad</Button>} */}
                 
                 {escrowState === "Locked" && <p>"Send the car to the client and wait for confirmation of your client before you receive the money or refund the buyer"</p>}
                 {escrowState === "Locked" && <Button style={fullWidth} onClick={refundBuyer} color="secondary" variant="contained">I want to refund the buyer.</Button>}

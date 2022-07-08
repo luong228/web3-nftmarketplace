@@ -1,6 +1,9 @@
+require('dotenv').config()
 require("@nomiclabs/hardhat-waffle");
 require("hardhat-typechain");
 require("@nomiclabs/hardhat-web3");
+require("@nomiclabs/hardhat-ganache");
+require("@nomiclabs/hardhat-etherscan");
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -44,10 +47,20 @@ module.exports = {
       // accounts: [`0x${your-private-key}`]
       // 
     },
+    goerli: {
+      url: `https://eth-goerli.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
+      accounts: [process.env.GOERLI_PRIVATE_KEY]
+    },
     // rinkeby: {
     //   url: "https://rinkeby.infura.io/v3/projectid",
     //   accounts: [process.env.a2key]
-    // }
+    // },
+    
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: "IXJUST1DCTY18ED3REQG7F9DIZB8GIDP66"
   },
   solidity: "0.8.3",
 };
