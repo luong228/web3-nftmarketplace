@@ -1,11 +1,15 @@
 
-### Running this project
-
-The chain ID should be 1337. 
 
 #### Local setup
 
 To run this project locally, follow these steps.
+
+1. Clone the project locally, change into the directory, and install the dependencies:
+
+```sh
+git clone https://github.com/dabit3/polygon-ethereum-nextjs-marketplace.git
+
+cd polygon-ethereum-nextjs-marketplace
 
 # install using NPM or Yarn
 npm install
@@ -76,4 +80,4 @@ module.exports = {
 };
 ```
 
-If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) project ID.
+
