@@ -1,9 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-.secret
-.infuraid
-config.js
-
 # dependencies
 /node_modules
 /.pnp
@@ -34,15 +30,18 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# local secret files
+.secret
+.env
+
 # vercel
 .vercel
 
 node_modules
 
-#Hardhat files
+# hardhat files
 cache
-artifacts
+# artifacts
 
-#lock
-yarn.lock
-.env
+# eslint
+.eslintcache
