@@ -1,6 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
+require("dotenv").config();
 const fs = require('fs');
-// const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -8,20 +8,20 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
-    /*
+    
     mumbai: {
-      // Infura
-      // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
-      url: "https://rpc-mumbai.matic.today",
-      accounts: [process.env.privateKey]
+      // Alchemy Testnet
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.ALCHEMY_ID}`,
+      // url: "https://rpc-mumbai.matic.today",
+      accounts: [process.env.PRIVATE_KEY]
     },
     matic: {
-      // Infura
-      // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
-      url: "https://rpc-mainnet.maticvigil.com",
-      accounts: [process.env.privateKey]
+      // Alchemy Mainnet
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.ALCHEMY_ID}`,
+      // url: "https://rpc-mainnet.maticvigil.com",
+      accounts: [process.env.PRIVATE_KEY]
     }
-    */
+    
   },
   solidity: {
     version: "0.8.4",

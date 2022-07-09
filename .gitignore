@@ -46,3 +46,4 @@ artifacts
 #lock
 package-lock.json
 yarn.lock
+.env
