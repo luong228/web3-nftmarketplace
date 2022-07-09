@@ -170,7 +170,7 @@ const NftItem = ({ nftId }) => {
                 alt="NFT image"
                 layout="fill"
                 objectFit="cover"
-                objectPosition="top center"
+                objectPosition="center"
                 className="rounded-lg"
               />
             </div>

@@ -70,7 +70,7 @@ const NFTListItem = ({
           alt="NFT image"
           layout="fill"
           objectFit="cover"
-          objectPosition="top center"
+          objectPosition="center"
           className="rounded-lg rounded-b-none"
         />
       </div>
