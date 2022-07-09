@@ -1,0 +1,17 @@
+{
+  "site": {
+    "id": "10a0e5a2-7615-4357-9057-3a8e36e58b5d",
+    "team": "ce1a27fc-522a-44ff-a7bc-c83495f6767c",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "ie207m21-metaverse"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": ".next",
+    "rootDir": "",
+    "environment": {
+       "REACT_APP_ADOPTION_CONTRACT": "0x42bB3cfd86B4CE7aB3Bf7334357b7D033D718dBd"
+    }
+  }
+}
