@@ -73,14 +73,9 @@ const Layout = ({ children }) => {
         <div className="bg-yellow-200 text-yellow-600 h-12 flex items-center justify-center">
           <ExclamationIcon className="h-6 w-6 mr-2" />
           <p>Please switch to</p>
-          <a
-            href="https://github.com/UrbanWill/nft-marketplace#setup"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline ml-1"
-          >
+          <p rel="noopener noreferrer" className="underline ml-1">
             Polygon test net
-          </a>
+          </p>
         </div>
       )}
       {/* div with relative class needed to render slideover panel */}
