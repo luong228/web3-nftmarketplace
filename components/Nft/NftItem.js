@@ -177,11 +177,9 @@ const NftItem = ({ nftId }) => {
             <div className="flex-1 flex flex-col justify-between pt-5">
               <h1 className="text-2xl font-bold">{`${name} #${nftId}`}</h1>
               {/* <p className="font-medium">{description}</p> */}
-              <div className="p-4">
-                <p style={{ height: "50px" }} className="font-medium">
-                  {description}
-                </p>
-              </div>
+              <p style={{ height: "50px" }} className="font-medium">
+                {description}
+              </p>
               {shouldShowPrice && (
                 <div>
                   <p className="font-medium py-2">Price</p>
