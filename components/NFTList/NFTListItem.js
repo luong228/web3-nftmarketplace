@@ -76,8 +76,10 @@ const NFTListItem = ({
       </div>
       <div className="p-2">
         <p className="text-2xl font-semibold">{name}</p>
-        <div>
-          <p className="text-gray-400 truncate">{description}</p>
+        <div className="p-4">
+          <p style={{ height: "50px" }} className="text-gray-400 truncate">
+            {description}
+          </p>
         </div>
       </div>
       {price && (
